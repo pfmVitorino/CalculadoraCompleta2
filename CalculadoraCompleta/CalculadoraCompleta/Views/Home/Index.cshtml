@@ -1,0 +1,176 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link href="~/CSS/bootstrap.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+    <title>Calculadora</title>
+
+</head>
+<body>
+    <div> 
+
+        <h1> Calculadora Completa</h1>
+
+        <!-- objecto para devolver o contéudo da calculadora do browser 
+            para o servidor-->
+        <!-- esta linha de comentário é vista no browser-->
+       @* mas esta não é...*@
+
+       <form method="post">
+
+
+           <table style="border-spacing:5px; border-collapse:collapse; border:1px solid #808080" >
+               @* primeira linha*@
+               <tr>
+
+                   <td colspan="5">
+
+                       <input type="text" name="visor"
+                              value = "@ViewBag.Visor" readonly ="readonly"
+                              class="form-control"
+                              style="height:30px; width:215px;text-align:right;"/>
+
+                   </td>
+               </tr>
+               @* segunda linha*@
+
+               <tr>
+
+                   <td>
+                       <input type="submit" name="bt" value="7"
+                              class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+
+                   <td>
+                       <input type="submit" name="bt" value="8"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="9" 
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value=":"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="+/-"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+               </tr>
+               @* terceira linha*@
+               <tr>
+
+                   <td>
+                       <input type="submit" name="bt" value="4"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+
+                   <td>
+                       <input type="submit" name="bt" value="5"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="6"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="X" class="btn btn-default"
+                              style="height:40px; width:40px;" />
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="C"
+                               class="btn btn-danger"
+                              style="height:40px; width:40px;"/>
+                   </td>
+               </tr>
+
+               @* quarta linha*@
+               <tr>
+
+                   <td>
+                       <input type="submit" name="bt" value="1"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+
+                   <td>
+                       <input type="submit" name="bt" value="2" 
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="3" 
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="-" 
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td rowspan="2">
+                       <input type="submit" name="bt" size ="2" value="="
+                               class="btn btn-default"
+                              style="height:82px; width:40px;"/>
+                   </td>
+               </tr>
+
+               @* quinta linha*@
+               <tr>
+
+                   <td colspan="2">
+                       <input type="submit" name="bt" value="0"
+                               class="btn btn-default"
+                              style="height:40px; width:82px;"/>
+                   </td>
+
+                   <td>
+                       <input type="submit" name="bt" value=","
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   <td>
+                       <input type="submit" name="bt" value="+"
+                               class="btn btn-default"
+                              style="height:40px; width:40px;"/>
+                   </td>
+                   
+               </tr>
+
+
+           </table>
+
+
+       </form>
+
+
+
+
+    </div>
+</body>
+</html>
